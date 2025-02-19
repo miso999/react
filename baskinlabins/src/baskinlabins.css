@@ -1,0 +1,13 @@
+.baskinlabins {
+  display: flex;
+}
+
+.baskinlabins > figure {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.baskinlabins > figure > img {
+  width: 300px;
+}
