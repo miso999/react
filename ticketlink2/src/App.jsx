@@ -3,7 +3,7 @@ import BaseText from "../atom/BaseText";
 function App() {
   return (
     <>
-      <BaseText></BaseText>
+      <BaseText css={{ color: "red" }}></BaseText>
     </>
   );
 }

@@ -1,7 +1,6 @@
-const BaseText = (props) => {
+const Match = (props) => {
   const { text, css } = props;
-
   return <span style={css}>{text}</span>;
 };
 
-export default BaseText;
+export default Match;
