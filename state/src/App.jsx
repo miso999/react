@@ -1,4 +1,7 @@
 import { useState } from "react";
+import ColorBox from "./ColorBox";
+import Counter from "./Counter";
+import Quiz from "./Quiz";
 
 // function App() {
 //   // 상태가 변화하면 useState 사용하기!
@@ -75,10 +78,12 @@ import { useState } from "react";
 // }
 
 function App() {
-  const [num, setNum] = useState(0);
-
-  return (prev) => {
-    prev;
-  };
+  return (
+    <>
+      <ColorBox></ColorBox>
+      <Counter></Counter>
+      <Quiz></Quiz>
+    </>
+  );
 }
 export default App;
