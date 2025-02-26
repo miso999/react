@@ -1,89 +1,39 @@
 import { useState } from "react";
 import ColorBox from "./ColorBox";
 import Counter from "./Counter";
-import Quiz from "./Quiz";
+import HelloButton from "./HelloButton";
 
+//아래거 필요요
 // function App() {
-//   // 상태가 변화하면 useState 사용하기!
-//   // 리액트에서 queryselect, getby 안씀 절대!
-//   const [num, setNum] = useState(0);
-
-//   const plus = () => {
-//     setNum((prev) => prev + 5);
-//   };
-//   return;
-//   <div onClick={plus}>{num}</div>;
-// }
-
-// function App() {
-//   const [num, setNum] = useState(0);
-//   const plus = () => {};
-//   const minus = () => {
-//     setNum((prev) => prev - 1);
-//   };
-// }
-// return (
-//   <div>
-//     <button onClick={minus}>-</button>
-//     <span>{num}</span>
-//     <button onMouseEnter={}>+</button>
-//   </div>
-// );
-
-// function App() {
-//   const [num, setNum] = useState(0);
-//   const plus = () => {
-//     setNum((prev) => prev + 1);
-//   };
-//   const minus = () => {
-//     setNum((prev) => (prev == 0 ? 0 : prev - 1));
-//   };
-//   return (
-//     <div>
-//       <button onClick={minus}>-</button>
-//       <span style={{ color: 10 <= num ? "red" : "black" }}>{num}</span>
-//     </div>
-//   );
-// }
-
-// function App() {
-//   const [num, setNum] = useState(0);
-//   const plus = () => {
-//     setNum((prev) => prev + 1);
-//   };
-//   const minus = () => {
-//     setNum((prev) => (prev == 0 ? 0 : prev - 1));
-//   };
-
-//🥚🐣🐥🐔🍗
-// function App() {
-//   const steps = ["🥚", "🐣", "🐥", "🐔", "🍗"];
-//   const [step, setStep] = useState(0);
-
-//   const nextStep = () => {
-//     setStep((prev) => (prev == 4 ? prev : prev + 1));
-//   };
-
-//   const prevStep = () => {
-//     setStep((prev) => (prev == 0 ? prev : prev - 1));
-//   };
-
 //   return (
 //     <>
-//       <button onClick={prevStep}>이전스텝</button>
-//       <span>{evolution[step]}</span>
-//       <button onClick={nextStep}>다음스텝</button>
+//       <ColorBox></ColorBox>
+//       <Counter></Counter>
+//       <Quiz></Quiz>
 //     </>
 //   );
 // }
+// export default App;
 
+// function App() {
+//   1.콘솔로 하이루
+//   const hi = () => {
+//     console.log("하이루~!");
+// };
+//2.콘솔로 매개변수 name 오면 name님 반가워요~!
+// const hello = (name) => {
+//   console.log(`${name}님 반가워~!`);
+// };
 function App() {
   return (
     <>
-      <ColorBox></ColorBox>
-      <Counter></Counter>
-      <Quiz></Quiz>
+      {Array(100)
+        .fill(0)
+        .map((a, i) => {
+          return <HelloButton num={i + 1} />;
+        })}
     </>
   );
 }
+
 export default App;
