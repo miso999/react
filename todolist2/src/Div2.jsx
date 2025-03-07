@@ -7,13 +7,13 @@ const Div2 = (props) => {
   return (
     <div
       style={{
-        width: "100px",
-        height: "100px",
+        width: "300px",
+        height: "300px",
         borderRadius: "20px",
         border: "5px solid #FEDCE7",
-        padding: "100px",
         margin: "0 auto",
         marginTop: "10px",
+        padding: "5px 0px",
       }}
     >
       {b.map((v) => (

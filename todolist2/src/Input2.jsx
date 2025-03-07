@@ -14,6 +14,7 @@ const Input2 = (props) => {
       }}
     >
       <input
+        maxLength={20}
         onChange={(e) => {
           a(e.target.value);
         }}

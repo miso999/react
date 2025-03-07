@@ -4,9 +4,7 @@ const Output = () => {
   return (
     <div>
       <input type="checkbox" />
-      <div style={{ color: "black" }}>
-        <FaRegTrashAlt />
-      </div>
+      <div style={{ color: "black" }}></div>
     </div>
   );
 };
